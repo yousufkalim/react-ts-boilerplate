@@ -7,7 +7,7 @@ import routes from './routes';
 
 // CSS Integration
 import 'react-toastify/dist/ReactToastify.css';
-import './css/index.css';
+import './app.css';
 
 const App: FC = () => {
   const checkAuth = (): boolean => {

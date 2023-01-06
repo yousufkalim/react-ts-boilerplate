@@ -1,11 +1,11 @@
 // Init
 import React, { useContext, useState, createContext, ReactNode } from 'react';
-import UserType from '../types/user';
+import User from '../ts/interfaces/user.intefaces';
 
 // Initializing Create Context Hook
 interface StoreType {
   loggedIn: boolean;
-  user: UserType | object;
+  user: User | object;
 }
 const storeContext = createContext<StoreType | null>(null);
 

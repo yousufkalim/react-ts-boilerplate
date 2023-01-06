@@ -1,14 +1,17 @@
 import React, { FC } from 'react';
 
-// Media
-import logo from '../assets/react-logo.svg';
+// Style
+import './Hero.css';
 
-interface HeroPropsType {
+// Media
+import logo from '../../assets/home/react-logo.svg';
+
+interface HeroProps {
   title: string;
   text?: string;
 }
 
-const Hero: FC<HeroPropsType> = ({ title, text }) => {
+const Hero: FC<HeroProps> = ({ title, text }) => {
   return (
     <div className="Hero">
       <header className="Hero-header">

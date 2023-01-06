@@ -1,28 +1,28 @@
 import React, { ReactElement } from 'react';
-import Home from '../pages/Home';
+import Home from '../pages/home/Home';
 
 // Types
-interface BaseRouteType {
+interface BaseRoute {
   path: string;
   protected?: boolean;
   failureRedirect?: string;
-  children?: RouteType[];
+  children?: Route[];
 }
 
-interface ElementType extends BaseRouteType {
+interface Element extends BaseRoute {
   element: ReactElement;
   navigate?: never;
 }
 
-interface NavigateType extends BaseRouteType {
+interface Navigate extends BaseRoute {
   navigate: string;
   element?: never;
 }
 
-type RouteType = ElementType | NavigateType;
+type Route = Element | Navigate;
 
 // Routes
-const routes: RouteType[] = [
+const routes: Route[] = [
   {
     path: '/',
     element: <Home />,
