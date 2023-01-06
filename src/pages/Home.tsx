@@ -1,10 +1,12 @@
 import React, { FC } from 'react';
+import Hero from '../components/Hero';
 
 const Home: FC = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <Hero
+      title="Welcome to React TypeScript Boilerplate"
+      text="Edit src/components/Hero.tsx and save to reload."
+    />
   );
 };
 

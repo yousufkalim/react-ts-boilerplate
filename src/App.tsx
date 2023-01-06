@@ -4,6 +4,9 @@ import Router from 'react-easy-router';
 // Routes
 import routes from './routes';
 
+// CSS Integration
+import './css/index.css';
+
 const App: FC = () => {
   const checkAuth = (): boolean => {
     return localStorage.getItem('token') !== null;

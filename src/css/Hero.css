@@ -1,0 +1,39 @@
+.Hero {
+  text-align: center;
+}
+
+.Hero-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Hero-logo {
+    animation: Hero-logo-spin infinite 20s linear;
+  }
+}
+
+.Hero-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Hero-header p {
+  font-size: 20px;
+  line-height: 2.5;
+}
+
+@keyframes Hero-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
