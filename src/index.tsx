@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import { StoreProvider } from './context';
+import { StoreProvider } from './context/store';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
 

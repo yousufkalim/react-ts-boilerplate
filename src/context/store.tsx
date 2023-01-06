@@ -1,6 +1,6 @@
 // Init
 import React, { useContext, useState, createContext, ReactNode } from 'react';
-import User from '../types/user.intefaces';
+import User from '../types/user';
 
 // Initializing Create Context Hook
 interface StoreType {
