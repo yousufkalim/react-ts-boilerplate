@@ -16,8 +16,10 @@ const Hero: FC<HeroProps> = ({ title, text }) => {
     <div className="Hero">
       <header className="Hero-header">
         <img src={logo} className="Hero-logo" alt="logo" />
-        <h4>{title}</h4>
-        <p>{text ?? ''}</p>
+        <h4 className="text-2xl bg-gradient-to-r from-indigo-800 hover:text-4xl ease-in duration-300">
+          {title}
+        </h4>
+        <p className="text-[red]">{text ?? ''}</p>
       </header>
     </div>
   );
