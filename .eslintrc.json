@@ -16,6 +16,7 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
+  "ignorePatterns": ["tailwind.config.js"],
   "plugins": ["react"],
   "rules": {
     "@typescript-eslint/strict-boolean-expressions": "off",
