@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect } from 'react';
 import Router from 'react-easy-router';
 import { ToastContainer } from 'react-toastify';
 
@@ -8,8 +8,13 @@ import routes from './routes';
 // CSS Integration
 import 'react-toastify/dist/ReactToastify.css';
 import './app.css';
+import eventHandler from './utils/eventHandler';
 
 const App: FC = () => {
+  useEffect(() => {
+    eventHandler().finally(console.log);
+  }, []);
+
   const checkAuth = (): boolean => {
     return localStorage.getItem('token') !== null;
   };

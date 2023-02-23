@@ -5,7 +5,7 @@
   "description": "ReactJS boilerplate with TypeScript",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yousufkalim/react-typescript.git"
+    "url": "git+https://github.com/yousufkalim/react-ts-boilerplate.git"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -15,6 +15,10 @@
     "prepare": "husky install"
   },
   "author": "Yousuf Kalim <yousufkalim@outlook.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yousufkalim/node-ts-boilerplate/issues"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -44,7 +48,7 @@
     "axios": "^1.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-easy-router": "^2.1.1",
+    "react-easy-router": "^2.1.2",
     "react-router-dom": "^6.6.1",
     "react-scripts": "5.0.1",
     "react-toastify": "^9.1.1",
